@@ -25,3 +25,77 @@
     .jumbotron .lang-logo img {
       max-width: 100%; }
 
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        /*background-color: rgb(248, 211, 211);*/
+    }
+    
+    .page-frame{
+      height: 650px;
+    }
+
+    .page-frame:hover{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .col:hover{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .home-content{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .btn:hover{
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .nav-bar-btn{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      column-gap: 10px;
+    }
+    
+    .content-frame{
+      background-color: darkgrey;
+    }
+    .nav-bar-item {
+      grid-area: co;
+    }
+    .top-container {
+        background-color: #f1f1f1;
+        padding: 30px;
+        text-align: center;
+    } 
+    .nav-bar-frame {
+        display:grid;
+        background-color: #008e9b;
+    }
+    .btn{
+      border: 1px solid black;
+      border-radius: 0%;
+      width:80px;
+
+    }
+    
+    .content {
+        padding: 16px;
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    .sticky + .content {
+        padding-top: 102px;
+    }
+
+    .footer{
+      height: auto;
+      margin-bottom: 5px;
+      background-color: #008e9b;;
+    }
