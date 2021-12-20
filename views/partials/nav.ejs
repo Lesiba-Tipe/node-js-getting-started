@@ -1,15 +1,28 @@
-<div class="top-container">
-  <h1>Scroll Down</h1>
-  <p>Scroll down to see the sticky effect</p>
-  <!--<div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">JANE DOE</h1>
-    <h3 class="w3-hide-medium w3-hide-small">PHOTOGRAPHER</h3>
-  </div>-->
+
+
+<div id="navigation" class="navigation-bar">
+
+  <div class="logo"></div>
+
+  <div class="sub-nav-bar">
+    <div><a  class="active" href="#home">Home</a></div>
+    <div><a href="#about">About</a></div>
+    <div><a href="#potfolio">Potfolio</a></div>
+    <div><a href="#services">Services</a></div>
+  </div>
 </div>
 
-<div class="nav-bar-btn" id="nav-bar">
-  <a href="/" type="button" class="btn">Home</a>
-  <a href="/about" type="button" class="btn">About</a>
-  <a href="/contacts" type="button" class="btn">Contacts</a>
-  <a href="/potfolio" type="button" class="btn">Potfolio</a>
-</div>
+<script>
+  window.onscroll = function() {sticky_nav_bar()};
+
+  var nav_bar = document.getElementById("navigation");
+  var sticky = nav_bar.offsetTop;
+
+  function sticky_nav_bar() {
+    if (window.pageYOffset > sticky) {
+      nav_bar.classList.add("sticky");
+    } else {
+      nav_bar.classList.remove("sticky");
+    }
+  }
+</script>

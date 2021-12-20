@@ -1,0 +1,27 @@
+{
+    "user" : 
+    [
+        {"id": "001", "username": "iamtipe", "firstName": "Lesiba","lastName": "Moshweu","email":"moshweutipe@gmail.com", "account": "admin"},       
+        {"id": "002","username": "ofentsemomo", "firstName": "Ofentse","lastName": "Kubayi","email":"ofentse@gmail.com", "account": "tenant"}       
+    ],
+    "slidelinks" : 
+    [
+        {"id":"001","url":"https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/1.jpg?raw=true"},
+        {"id":"002","url":"https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/2.jpg?raw=true"},
+        {"id":"003","url":"https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/3.jpg?raw=true"},
+        {"id":"004","url":"https://github.com/Flat-Pixels/assets_hosting/blob/master/picture_slides/4.jpg?raw=true"}
+    ],
+    "potfolio" : 
+    [
+        {"id":"001", "url":""},
+        {"id":"002", "url":""},
+        {"id":"003", "url":""}
+    ]
+    ,
+    "socialmediacontacts" : 
+    [
+        {"id":"001", "twitter":"@tipegraphics"},
+        {"id":"002", "facebook":"@tipegraphics"},
+        {"id":"003", "linkedin":"/tipegraphics"}
+    ]
+}
