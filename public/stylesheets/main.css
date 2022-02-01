@@ -1,17 +1,49 @@
 /* COLOR SAMPLES 
-*
-*
+* #CF7C31; Link
+* #B9B8B8; text
+* #131313; Backgorund
 */
 
 
 /* MOBILE */
-.responsive-bg-image{
-  background-size: cover;
-  background-image: url("../assets/bg-mobile.jpg");
-  
-}
+
 
 /* HUMBURGER MENU */
+
+ /*Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed 
+ @media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+} 
+*/
+
+h5{
+  border-bottom: 1px solid #0F7C31;
+}
+.frame{
+  background-color: #131313;
+  margin: 0px, 30px, 5px;
+}
+
+.sub-frame{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #B9B8B8; 
+  margin: 0px 10px 5px;
+  /*background-color: #131313;*/
+}
+
+#about, #services, #potfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-frame{
+  border-left: 2px solid #CF7C31;
+  padding-left: 5px;
+}
 
 /* DESKTOP */
 @media only screen and (min-width: 768px) {
@@ -21,6 +53,11 @@
     --footerHeight: 10px
   }
 
+  h5{
+    color: #B9B8B8;
+    border-bottom: 1px solid #CF7C31;
+    /*background-color: red*/
+  }
   .logo{
     width: 50px;
     height: 50px;
@@ -43,7 +80,7 @@
     margin: 0px 0px 0px 0px;
     height: auto;
     width: 100%;
-    background-color: rgb(19, 19, 19);
+    background-color: #131313;
   }
 
 
@@ -66,14 +103,15 @@
   .sub-nav-bar a{  
     text-decoration: none;
     margin: 0px 10px 0px 0px;
-    color: #ffffff;
+    color: #B9B8B8;
+    /*color: #9c9c9c;*/
   }
 
-  .sub-nav-bar div a:hover{
+  .sub-nav-bar a:hover{
     color: #CF7C31;
   }
 
-  .sub-nav-bar a:focus{
+  .sub-nav-bar div a:active{
     
     color: #CF7C31;
     border-bottom: 3px solid #CF7C31;
@@ -95,13 +133,15 @@
     margin: 0px 0px 120px 0px;
     height: auto;
     
-    background-color: bisque;
+    background-color: #B9B8B8;
   }
 
   .sub-frame{
-    margin: 0px 0px 0px 50px;
-    background-color: rgb(68, 68, 68);
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px 0px 50px;
     height: auto;
+    background-color: #0C0C0C;
   }
 
   #home{
@@ -110,64 +150,134 @@
     width: 100%;
   }
   #home .a{
-    display: flex;
-    width: 300px;
+    display: flex ;
+    width: 30%;
     justify-content: flex-start;
-    
-    background-color: rgb(188, 207, 157);
+    color: #B9B8B8;
+    border-left: 2px solid #CF7C31;
+    padding-left: 20px;
+    margin: 20px 0px 0px 20px;
+    /*background-color: rgb(188, 207, 157);*/
   }
  
+  #home p{
+    font-size: 14px;
+  }
 
-  #about {
-    height: 400px;
-    background-color: #6e61a7;
+
+  #about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-frame {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    /*height: 400px;*/
     margin: 10px 0px 0px 0px;
+    /*background-color: #6e61a7;*/
+  }
+
+  .about-frame div{
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+    color: #B9B8B8;
+    border-left: 2px solid #CF7C31;
+    padding-left: 20px;
+    margin: 20px 0px 0px 20px;
+    /*background-color: rgb(188, 207, 157);*/
+  }
+
+  .about-frame p{
+    font-size: 14px;
+
+  }
+
+  #services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #141414;*/
+  }
+
+  .service-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 10px 0px 0px;
+    color: #B9B8B8;
+    /*border: 1px solid #C9C9C9;*/
+    /*background-color: #3E3E3E;*/
+  }
+  .service-content{
+    display: flex;
+    flex-direction: row;
+    flex: 2 1 auto;
+    gap: 15px;
+    margin-top: 10px;
+    padding: 0px 10px 15px;
+    /*background-color: #3E3E3E;*/
+  }
+  .service-card{
+    padding: 0px 10px 0px;
+    border-left: 1px solid #CF7C31;
   }
 
   #potfolio {
-    height: 400px;
-    margin: 10px 0px 0px 0px;
-    background-color: #81cfbe;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #B9B8B8;
+    margin: 10px 0px 5px 0px;
   }
-  #services{
+
+  .potfolio-frame{
     display: flex;
     flex-direction: row;
-    column-gap: 10px;
-    row-gap: 10px;
+    justify-content: center;
+    margin: 0px 0px 5px;
+    /*background-color: #C9C9C9;*/
+  }
+
+  .potfolio-content{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px 0px 0px 0px;
-   background-color: #ffffff;
-  }
-  .service-card{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    width:20%;
-    border-radius:3px;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-    background-color: cadetblue;
+    justify-content: center;
+    gap: 15px;
+    /*background-color: #9b6969;*/
   }
 
-  .card-icon{
+  .potfolio-card{
+    border: 0px solid #CF7C31;
+  }
+
+  .gallery{
+    height: 250px;
+    width: auto;
+    background-color: #B9B8B8;
+  }
+
+  /*.card-icon{
     width: 20px;
     background-color: chartreuse;
-  }
+  }*/
   .footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*align-content: center;*/
-
+    color: #B9B8B8;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: auto;
-    border-top: 2px solid #CF7C31;
-    /*background-color: brown;*/
-    
-    /*filter: blur(2px);*/
+    /*border-top: 2px solid #CF7C31;*/
+    background-color: #131313;
   }
 
   .footer-content-contacts{
@@ -185,7 +295,7 @@
     /*background-color: #46a56e;*/
   }
 
-  .footer-content-contacts p,h5{
+  .footer-content-contacts p,h4{
     display: flex;
     flex-direction: column;
     
@@ -193,7 +303,7 @@
     /*background-color: rgb(174, 117, 182);*/
   }
 
-  .footer-content-contacts h5{
+  .footer-content-contacts h6{
     font-size: 15px;
     margin-top: 0;
     /*background-color: rgb(174, 117, 182);*/
@@ -208,8 +318,6 @@
   .copy{
     margin: 15px 0px 0px 0px;
     font-size: 10px;
-    /*line-height: 0.5; */
-    /*background-color: #81cfbe;*/
   }
 
   .icons a{
