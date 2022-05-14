@@ -8,5 +8,5 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
 
-  .get('/data', (req, res) => res.sendFile('./data/data.json', {root:__dirname}))
+  .get('/data', (req, res) => res.sendFile('public/data.json', {root:__dirname}))
   .listen(PORT, () => console.log(`Listening on localhost:${ PORT }`))
