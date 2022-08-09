@@ -249,9 +249,14 @@ h5{
   }
 
   .potfolio-card{
-    border: 0px solid #CF7C31;
+    border-radius: 50%;
+    position: relative;
+    transition: all 1s ease;
   }
 
+  .potfolio-card :hover{
+    border-radius: 0px;
+  }
   .gallery{
     height: 250px;
     width: auto;
